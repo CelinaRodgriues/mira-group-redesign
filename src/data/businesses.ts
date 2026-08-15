@@ -1,0 +1,86 @@
+import water from "@/assets/water.jpg";
+import tankers from "@/assets/tankers.jpg";
+import equipment from "@/assets/equipment.jpg";
+import oil from "@/assets/oil.jpg";
+import salt from "@/assets/salt.jpg";
+
+export type Vertical = {
+  index: string;
+  slug: string;
+  to: string;
+  name: string;
+  entity: string;
+  headline: string;
+  summary: string;
+  image: string;
+  cta: string;
+  specs: string[];
+};
+
+export const verticals: Vertical[] = [
+  {
+    index: "01",
+    slug: "water",
+    to: "/businesses/water",
+    name: "Water Solutions",
+    entity: "Mira Water Works",
+    headline: "Reliable Water for Industrial & Commercial Needs",
+    summary:
+      "Raw Water, RO Water, DM Water and Distilled Water supplied with a focus on reliability, quality and timely delivery.",
+    image: water,
+    cta: "Explore Water Solutions",
+    specs: ["Raw Water", "RO Water", "DM Water", "Distilled Water"],
+  },
+  {
+    index: "02",
+    slug: "tankers",
+    to: "/businesses/tankers",
+    name: "Chemical & Specialized Tankers",
+    entity: "Mira Transport Co.",
+    headline: "Safe Movement of Specialized Liquid Cargo",
+    summary:
+      "Specialized transportation for acids, chemicals and liquid cargo through MS, SS, coated and ISO tanker capabilities, supported by experienced operations and safety-focused practices.",
+    image: tankers,
+    cta: "Explore Tanker Solutions",
+    specs: ["MS Tankers", "SS Tankers", "Rubber-Lined / Coated", "ACN Tankers", "ISO Tanks"],
+  },
+  {
+    index: "03",
+    slug: "heavy-vehicles",
+    to: "/businesses/heavy-vehicles",
+    name: "Heavy Vehicles & Equipment",
+    entity: "Mira Heavy Vehicles",
+    headline: "Equipment That Keeps Industry Moving",
+    summary:
+      "Trucks, dumpers, loaders, JCBs and forklifts supporting cargo handling, salt operations, container movement and industrial requirements.",
+    image: equipment,
+    cta: "Explore Equipment",
+    specs: ["Trucks", "Dumpers", "Loaders", "JCBs", "Forklifts"],
+  },
+  {
+    index: "04",
+    slug: "oil",
+    to: "/businesses/oil",
+    name: "Oil Transportation",
+    entity: "Mira Edible Oil Transport",
+    headline: "Dedicated Transportation for Liquid Oils",
+    summary:
+      "Reliable tanker transportation for edible and non-edible oils, with a focus on safe handling, product integrity and timely delivery.",
+    image: oil,
+    cta: "Explore Oil Transportation",
+    specs: ["Edible Oils", "Non-Edible Oils", "Dedicated Tankers", "Contracted Capacity"],
+  },
+  {
+    index: "05",
+    slug: "salt",
+    to: "/businesses/salt",
+    name: "Salt & Minerals",
+    entity: "Mira Salt Works",
+    headline: "Quality Salt from the Heart of Kutch",
+    summary:
+      "Kutch-based salt operations supplying raw, edible, industrial, refined free-flow and iodized salt for diverse commercial and industrial requirements.",
+    image: salt,
+    cta: "Explore Salt Solutions",
+    specs: ["Raw Salt", "Industrial Salt", "Refined Free Flow", "Iodized Salt", "Edible Salt"],
+  },
+];
